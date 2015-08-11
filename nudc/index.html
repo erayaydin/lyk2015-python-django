@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nu-Dc</title>
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="assets/plugins/normalize/normalize.css" />
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/font-awesome.min.css" />
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.carousel.css" />
+    <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.transitions.css" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<div class="site">
+    <header>
+        <div class="logo">
+            <a href="#" title="nu-dc Records"><img src="assets/img/logo.png" alt="logo" /></a>
+        </div>
+        <div class="eRight">
+            <ul>
+                <li class="active"><a href="#" title="TR">TR</a></li>
+                <li><a href="#" title="EN">EN</a></li>
+                <li><a href="#" title="RU">RU</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="#" title="Hakkımızda">Hakkımızda</a></li>
+            <li><a href="#" title="Bizden Sesler">Bizden Sesler</a></li>
+            <li><a href="#" title="Konserler">Konserler</a></li>
+            <li><a href="#" title="Fotoğraflar">Fotoğraflar</a></li>
+            <li><a href="#" title="Videolar">Videolar</a></li>
+            <li><a href="#" title="Menajerlik">Menajerlik</a></li>
+            <li><a href="#" title="Bize Ulaşın">Bize Ulaşın</a></li>
+        </ul>
+        <ul class="social">
+            <li class="facebook"><a href="#" title="Facebook"><i class="fa fa-facebook-square"></i></a></li>
+            <li class="twitter"><a href="#" title="Twitter"><i class="fa fa-twitter-square"></i></a></li>
+            <li class="youtube"><a href="#" title="Youtube"><i class="fa fa-youtube-square"></i></a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="slider">
+            <div class="slider-left"><i class="fa fa-chevron-left"></i></div>
+            <div class="slider-right"><i class="fa fa-chevron-right"></i></div>
+            <div id="slider" class="slider-items">
+                <div class="slider-item">
+                    <a href="#" title="Yeni Albüm"><img src="http://placehold.it/964x430/ff2200/ffffff" alt="Slider 1" /></a>
+                </div>
+                <div class="slider-item">
+                    <a href="#" title="Yeni Albüm"><img src="http://placehold.it/964x430/ff0000/ffffff" alt="Slider 1" /></a>
+                </div>
+                <div class="slider-item">
+                    <a href="#" title="Yeni Albüm"><img src="http://placehold.it/964x430/000000/ffffff" alt="Slider 1" /></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright">
+            &copy; 2013 UNDC - Tüm Hakları Saklıdır
+        </div>
+        <div class="bulten">
+            <form>
+                <input type="text" placeholder="Gelişmelerden haberdar ol..." />
+                <input type="submit" value="Bülten" />
+            </form>
+        </div>
+    </footer>
+</div>
+
+<!-- jQuery -->
+<script src="assets/plugins/jquery/jquery-1.11.3.min.js"></script>
+
+<!-- Owl Carousel -->
+<script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+
+<script>
+
+    var slider = $("#slider");
+    slider.owlCarousel({
+
+        navigation: false,
+        pagination: false,
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem:true
+
+    });
+
+    $(".slider-right").click(function(){
+        slider.trigger('owl.next');
+    });
+    $(".slider-left").click(function(){
+        slider.trigger('owl.prev');
+    });
+</script>
+
+</body>
+</html>
