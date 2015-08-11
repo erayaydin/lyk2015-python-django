@@ -1,0 +1,245 @@
+body {
+    background: url("../img/body.png") repeat-x;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 960px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.container:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.eLeft {
+    float: left;
+}
+
+.eRight {
+    float: right;
+}
+
+.clear:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clear {
+    display: inline-block;
+}
+
+.img-responsive {
+    max-width: 100%;
+}
+
+/**** HEADER ****/
+
+.logo {
+    float: left;
+}
+
+.bayrak {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 14px;
+    margin-left: 10px;
+}
+
+.bayrak-tr {
+    background-image: url("../img/lang-tr.png");
+}
+
+.bayrak-en {
+    background-image: url("../img/lang-en.png");
+}
+
+.bayrak-ru {
+    background-image: url("../img/lang-rus.png");
+}
+
+body > header {
+    margin-top: 50px;
+}
+
+body > header .bayraklar {
+    float: right;
+}
+
+/*** NAV ***/
+
+body > nav {
+    margin-top: 20px;
+}
+
+body > nav > .container {
+
+}
+
+body > nav > .container > ul {
+    width: 958px;
+    border: 1px solid silver;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body > nav > .container > ul:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+body > nav > .container > ul > li {
+    float: left;
+    position: relative;
+}
+
+body > nav > .container > ul > li:last-child {
+    border-right: none;
+}
+
+body > nav > .container > ul > li a {
+    display: block;
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+    border-right: 1px solid #ccc;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+
+body > nav > .container > ul > li ul {
+    display: none;
+}
+
+body > nav > .container > ul > li a:hover {
+    background-color: #fdbe00;
+    color: #fff;
+}
+
+body > nav > .container > ul > li:hover > ul{
+    display: block;
+}
+
+body > nav > .container > ul > li ul {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    left: -1px;
+    z-index: 9;
+}
+
+body > nav > .container > ul > li ul li a{
+    width: 150px;
+    height: 40px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+/**** MAIN SECTION ****/
+
+body > section {
+    margin-top: 20px;
+}
+
+body > section .slider {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+}
+
+body > section .quote {
+    padding: 0 20px;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+body > section .services {
+
+}
+
+body > section .services .service {
+    float: left;
+    margin-right: 52px;
+    width: 285px;
+}
+
+body > section .services .service:last-child {
+    margin-right: 0;
+}
+
+body > section .services .service h3 {
+    background-position: top left;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+
+body > section .services .service-creative h3 {
+    background-image: url("../img/home-list_01.png");
+}
+
+body > section .services .service-quality h3 {
+    background-image: url("../img/home-list_02.png");
+}
+
+body > section .services .service-managerial h3 {
+    background-image: url("../img/home-list_03.png");
+}
+
+/***** FOOTER ****/
+
+body > footer {
+    margin: 15px 0;
+}
+
+body > footer > .container {
+    background-color: #fec612;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 15px 20px;
+    width: 920px;
+}
+
+body > footer > .container .links {
+    width: 245px;
+    float: left;
+    color: #000;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+body > footer > .container .links a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body > footer > .container .links a:hover {
+    text-decoration: underline;
+}
+
+body > footer > .container .contact {
+    float: right;
+    font-size: 11px;
+}

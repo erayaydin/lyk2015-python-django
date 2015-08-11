@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Atlasyol</title>
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="assets/plugins/normalize/normalize.css" />
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/font-awesome.min.css" />
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.carousel.css" />
+    <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.transitions.css" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="index.html" title="Atlasyol">
+                <img src="assets/img/logo.png" alt="Atlasyol Logo" />
+            </a>
+        </div>
+        <div class="eRight">
+            <p><i class="fa fa-phone"></i> Contact us : <b>+90 216 465 89 23</b></p>
+            <div class="bayraklar">
+                <a href="#" class="bayrak bayrak-tr"></a>
+                <a href="#" class="bayrak bayrak-en"></a>
+                <a href="#" class="bayrak bayrak-ru"></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="#" title="Home">Home</a></li>
+            <li><a href="#" title="About Us">About Us</a></li>
+            <li><a href="#" title="Business Sectors">Business Sectors</a></li>
+            <li>
+                <a href="#" title="Human Resources">Human Resources</a>
+                <ul>
+                    <li><a href="#" title="Jobs">Jobs</a></li>
+                </ul>
+            </li>
+            <li><a href="#" title="Contact Us">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section>
+    <div class="container">
+        <div class="slider" id="slider">
+            <a href="#" title="Slider 1">
+                <img src="http://placehold.it/1800x600/000000/ffffff" class="img-responsive" />
+            </a>
+            <a href="#" title="Slider 1">
+                <img src="http://placehold.it/1800x600/ececec/f0f0f0" class="img-responsive" />
+            </a>
+            <a href="#" title="Slider 1">
+                <img src="http://placehold.it/1800x600/ff2200/ffffff" class="img-responsive" />
+            </a>
+        </div>
+        <div class="quote">
+            <p>With the spirit of entrepreneurship, our company adopts the corporate culture and our innovative, dynamic, solution oriented perspective is based on science. This is where our strength comes from.</p>
+        </div>
+        <div class="services">
+            <div class="service service-creative">
+                <h3>Creative Solutions</h3>
+                <p>With academic knowledge and field experience, we try to provide the best service all through the process, from the beginning of the project until the en of the manufacturing stage. Our company has the proper pride of offering the first underwater implementation in the world.</p>
+            </div>
+
+            <div class="service service-quality">
+                <h3>Quality Policy</h3>
+                <p>Using the modern technology and scientific progress in our services, not compromising our understanding of quality, we aim to become one of the leading companies of our sector on a global scale. </p>
+            </div>
+
+            <div class="service service-managerial">
+                <h3>Managerial Approach</h3>
+                <p>Our company’s management pattern includes building up an organisation model based on the participation of all our employess, providing customer satisfaction, working in the best interests of our empleyees and society and focusing on the quality building productions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="links">
+            <p><a href="#" title="Home">Home</a> - <a href="#" title="About Us">About Us</a> - <a href="#" title="Business Sectors">Business Sectors</a> <a href="#" title="Human Resources">Human Resources</a> - <a href="#" title="Contact Us">Contact Us</a></p>
+        </div>
+        <div class="contact">
+            <p><i class="fa fa-map-marker"></i> Pasabahce Mah. Cubuklu Cad. Remzibey Sk. No:9 Beykoz/İISTANBUL</p>
+            <p><i class="fa fa-user"> +90 216 465 89 23</i></p>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="assets/plugins/jquery/jquery-1.11.3.min.js"></script>
+
+<!-- Owl Carousel -->
+<script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+
+<script>
+
+    var slider = $("#slider");
+    slider.owlCarousel({
+
+        navigation: false,
+        pagination: false,
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem:true
+
+    });
+</script>
+
+</body>
+</html>
