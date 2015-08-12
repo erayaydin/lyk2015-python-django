@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TodoList</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <h1>Todo-List</h1>
+
+        <ul class="list-group" id="todoList"></ul>
+
+        <form id="todoForm">
+            <div class="input-group">
+                <input type="text" class="form-control" name="todo" id="todoText" />
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" type="submit">Ekle</button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="assets/plugins/jquery/jquery-1.11.3.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Todo App -->
+<script src="assets/js/todo.js"></script>
+<script>
+    var app = new TODO;
+    app.init();
+
+    $.each(app.todos, function(key, todo){
+        $("#todoList").append("<li id='todo-"+key+"' class='list-group-item'>"+todo+" <a href='javascript:;' class='pull-right btn btn-danger btn-xs todo-sil' data-id='"+key+"'>Sil</a></li>");
+    });
+
+    $("#todoForm").submit(function(){
+        var todo = $("#todoText").val();
+
+        var id = app.addTodo(todo);
+
+        $("#todoList").append("<li id='todo-"+id+"' class='list-group-item'>"+todo+" <a href='javascript:;' class='pull-right btn btn-danger btn-xs todo-sil' data-id='"+id+"'>Sil</a></li>");
+
+        $("#todoText").val("");
+
+        return false;
+    });
+
+    $(document).on("click", ".todo-sil", function() {
+        var id = $(this).data("id");
+
+        app.removeTodo(id);
+
+        $("#todo-"+id).remove();
+    });
+</script>
+</body>
+</html>
