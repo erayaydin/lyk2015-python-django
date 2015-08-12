@@ -6,6 +6,9 @@
 
     <!-- Bootstrap -->
     <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link href="assets/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -19,7 +22,7 @@
             <div class="input-group">
                 <input type="text" class="form-control" name="todo" id="todoText" />
                 <span class="input-group-btn">
-                    <button class="btn btn-primary" type="submit">Ekle</button>
+                    <button class="btn btn-primary" type="submit"><i class="fa fa-plus"></i> Ekle</button>
                 </span>
             </div>
         </form>
@@ -39,7 +42,7 @@
     app.init();
 
     $.each(app.todos, function(key, todo){
-        $("#todoList").append("<li id='todo-"+key+"' class='list-group-item'>"+todo+" <a href='javascript:;' class='pull-right btn btn-danger btn-xs todo-sil' data-id='"+key+"'>Sil</a></li>");
+        $("#todoList").append("<li id='todo-"+key+"' class='list-group-item'>"+todo+" <a href='javascript:;' class='pull-right btn btn-danger btn-xs todo-sil' data-id='"+key+"'><i class='fa fa-trash-o'></i> Sil</a></li>");
     });
 
     $("#todoForm").submit(function(){
@@ -47,7 +50,7 @@
 
         var id = app.addTodo(todo);
 
-        $("#todoList").append("<li id='todo-"+id+"' class='list-group-item'>"+todo+" <a href='javascript:;' class='pull-right btn btn-danger btn-xs todo-sil' data-id='"+id+"'>Sil</a></li>");
+        $("#todoList").append("<li id='todo-"+id+"' class='list-group-item'>"+todo+" <a href='javascript:;' class='pull-right btn btn-danger btn-xs todo-sil' data-id='"+id+"'><i class='fa fa-trash-o'></i> Sil</a></li>");
 
         $("#todoText").val("");
 
