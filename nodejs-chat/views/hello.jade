@@ -1,0 +1,24 @@
+extends ./layout.jade
+
+block content
+  .container
+    .row
+      .col-md-12
+        .panel.panel-primary
+          .panel-heading
+            h3.panel-title=title
+          .panel-body
+            #messages
+          .panel-footer
+            form#sendForm
+              .input-group
+                input.form-control(type="text", name="message", placeholder="Mesajınız...")
+                .input-group-btn
+                  button.btn.btn-primary(type="submit") Gönder
+    .row
+      .col-md-12
+        .panel.panel-warning
+          .panel-heading
+            h3.panel-title Kullanıcılar
+          .panel-body
+            #users
