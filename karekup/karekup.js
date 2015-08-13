@@ -18,3 +18,8 @@ console.log("Küpler:", kupler);
 // Kareler ile küpleri topla
 var sonuc = kareler.concat(kupler);
 console.log("Sonuç:", sonuc);
+
+/*
+ * İşlemin tek satır hali
+ */
+console.log("Tek Satırlı Kodun Sonucu:", arr.slice(0, 5).map(function(sayi){ return sayi*sayi; }).concat(arr.slice(5).map(function(sayi){ return sayi*sayi*sayi; })));
