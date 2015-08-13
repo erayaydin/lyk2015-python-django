@@ -6,3 +6,4 @@ LYK2015 - Django ve Javascript ile Web Programlamaya Giriş
 - [NuDc Records](https://github.com/lyk2015/django/tree/master/nudc)
 - [NodeJS Sohbet Çalışması](https://github.com/lyk2015/django/tree/master/nodejs-chat)
 - [IMDB Film Çalışması](http://github.com/lyk2015/django/tree/master/film)
+- [Javascript Kare & Küp](http://github.com/lyk2015/django/tree/master/karekup)
