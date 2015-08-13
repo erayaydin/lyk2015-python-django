@@ -1,4 +1,5 @@
 var arr = [1,2,3,4,5,6,7,8,9];
+// 0'dan 9'a kadar dizi oluşturma : Array.apply(null, { length: 10 }).map(Number.call, Number)
 
 // ilk 5 karakteri al ve her biri için...
 var kareler = arr.slice(0, 5).map(function(sayi) {
