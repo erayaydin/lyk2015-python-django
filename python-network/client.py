@@ -6,4 +6,4 @@ client.send(5)
 data = client.recv(1024)
 client.close()
 
-print("Gelen veri:", data)  
+print("Gelen veri:", data)

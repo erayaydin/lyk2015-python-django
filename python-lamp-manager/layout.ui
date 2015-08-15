@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>239</width>
+    <height>65</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>LAMP Manager</string>
+  </property>
+  <widget class="QPushButton" name="mysqlbutton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MySQL</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../../../home/eray/Desktop/mysql.png</normaloff>../../../../../home/eray/Desktop/mysql.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="apachebutton">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>10</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Apache</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../../../home/eray/Desktop/apache.png</normaloff>../../../../../home/eray/Desktop/apache.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
