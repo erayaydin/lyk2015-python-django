@@ -9,3 +9,4 @@ LYK2015 - Django ve Javascript ile Web Programlamaya Giriş
 - [Javascript Kare & Küp](http://github.com/lyk2015/django/tree/master/karekup)
 - [Ileri Javascript Dosyaları](http://github.com/lyk2015/django/tree/master/ileri-javascript)
 - [Python Notification Example](http://github.com/lyk2015/django/tree/master/python-notification)
+- [Python Qt4 Examples](http://github.com/lyk2015/django/tree/master/python-qt4)
